@@ -1,0 +1,16 @@
+{
+  "name": "qrcode_project",
+  "version": "1.0.0",
+  "description": "generating qr code",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Naveen Kumar Mutyala",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.11",
+    "qr-image": "^3.2.0"
+  }
+}
