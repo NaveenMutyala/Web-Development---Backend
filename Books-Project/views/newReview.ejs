@@ -1,0 +1,27 @@
+<%- include('partials/header.ejs'); -%>
+<div class="container">
+
+
+<form class="row g-3" action="/add" method="post">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label"> Movie Name </label>
+      <input type="text" class="form-control" id="inputEmail4" name="moviename" placeholder=<%= locals.error  %>>
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Write Your Review</label>
+      <input type="textarea" class="form-control" id="inputAddress" placeholder="
+      write something about movie" name="review">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Rating</label>
+      <input type="range" class="form-control" id="inputCity" min="0" max="10" name="rating">
+    </div>
+    
+    
+    
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
+</div>
+  <%- include('partials/footer.ejs'); -%>
